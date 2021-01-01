@@ -15,6 +15,10 @@ public class DataStore {
 //        instance.init(path);
     }
 
+    public void init() {
+        fileStoreUtil.instance.init("");
+    }
+
     public void init(String path) {
         fileStoreUtil.instance.init(path);
     }
