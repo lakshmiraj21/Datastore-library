@@ -33,7 +33,7 @@ public class CreateData {
                     result.put("Result", "Success");
                     file.write(json.toJSONString());
                 } else {
-                    result.put("description", "File size exceeded 16kb");
+                    result.put("description", "JSON size exceeded 16kb");
                     result.put("error-code", "F101");
                     result.put("result", "Failed");
                 }

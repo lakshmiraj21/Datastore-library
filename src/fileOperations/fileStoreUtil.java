@@ -19,16 +19,17 @@ public class fileStoreUtil {
             }
 
             path = path + "DataStore";
-            File dataStoreDirectoryPath = new File(path);
+        }
 
-            if (!dataStoreDirectoryPath.exists()) {
-                boolean bool = dataStoreDirectoryPath.mkdir();
+        File dataStoreDirectoryPath = new File(path);
 
-                if(bool) {
-                    System.out.println("Directory created successfully");
-                } else {
-                    System.out.println("Sorry couldn’t create specified directory");
-                }
+        if (!dataStoreDirectoryPath.exists()) {
+            boolean bool = dataStoreDirectoryPath.mkdir();
+
+            if(bool) {
+                System.out.println("Directory created successfully");
+            } else {
+                System.out.println("Sorry couldn’t create specified directory");
             }
         }
 
@@ -41,7 +42,7 @@ public class fileStoreUtil {
 
         if (directory.listFiles() != null) {
             for (File file : directory.listFiles()) {
-                if (file.isFile() && file.toPath().endsWith(".json")) {
+                if (file.isFile()) {
                     System.out.println("Not inside folder size");
 
                     length += file.length();
