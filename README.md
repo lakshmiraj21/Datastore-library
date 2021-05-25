@@ -1,4 +1,4 @@
-# FreshWork_Lakshmiraj
+# Datastore library _Lakshmiraj
 
 Sample Test project to Run this DataStore library: **https://github.com/lakshmiraj21/FW_Lakshmiraj.git**
 
