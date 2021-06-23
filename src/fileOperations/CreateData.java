@@ -26,7 +26,7 @@ public class CreateData {
             result.put("error-code", "F402");
             result.put("result", "Failed");
         } else {
-            try (FileWriter file = new FileWriter(fileStoreUtil.instance.dataStoreFilePath + "\\" + key + ".json")) {
+            try (FileWriter file = new FileWriter(fileStoreUtil.instance.dataStoreFilePath + "\\" + key + ".text")) {
                 float jsonLength = (json.toJSONString().length());
 
                 if ((jsonLength/1024) < 16) {
