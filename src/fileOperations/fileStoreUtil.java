@@ -27,9 +27,9 @@ public class fileStoreUtil {
             boolean bool = dataStoreDirectoryPath.mkdir();
 
             if(bool) {
-                System.out.println("Directory created successfully");
+//                 System.out.println("Directory created successfully");
             } else {
-                System.out.println("Sorry couldn’t create specified directory");
+//                 System.out.println("Sorry couldn’t create specified directory");
             }
         }
 
@@ -43,11 +43,11 @@ public class fileStoreUtil {
         if (directory.listFiles() != null) {
             for (File file : directory.listFiles()) {
                 if (file.isFile()) {
-                    System.out.println("Not inside folder size");
+//                     System.out.println("Not inside folder size");
 
                     length += file.length();
                 } else {
-                    System.out.println("inside folder size" + file.getName());
+//                     System.out.println("inside folder size" + file.getName());
                     length += folderSize(file);
                 }
             }
