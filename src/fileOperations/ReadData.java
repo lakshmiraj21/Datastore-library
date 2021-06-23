@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class ReadData {
     public static JSONArray readData(String key) {
-        String filePath = fileStoreUtil.instance.dataStoreFilePath + "\\" + key + ".json";
+        String filePath = fileStoreUtil.instance.dataStoreFilePath + "\\" + key + ".txt";
         File keyPath = new File(filePath);
 
         if (keyPath.exists()) {
