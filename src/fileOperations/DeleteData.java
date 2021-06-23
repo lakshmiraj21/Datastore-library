@@ -7,7 +7,7 @@ import java.io.*;
 
 public class DeleteData {
     public static JSONArray deleteData(String key) {
-        String filePath = fileStoreUtil.instance.dataStoreFilePath + "\\" + key + ".json";
+        String filePath = fileStoreUtil.instance.dataStoreFilePath + "\\" + key + ".txt";
         File keyPath = new File(filePath);
         JSONObject result = new JSONObject();
 
